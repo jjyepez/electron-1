@@ -25,8 +25,8 @@ function takeScreenshot() {
     desktopCapturer.getSources({
         types: ['screen'],
         thumbnailSize: {
-          width: screen.getPrimaryDisplay().workAreaSize.width || 1920,
-          height: screen.getPrimaryDisplay().workAreaSize.height || 1200
+          width: 1920, // screen.getPrimaryDisplay().workAreaSize.width,
+          height: 1200, // screen.getPrimaryDisplay().workAreaSize.height
         },
         fetchWindowIcons: true
     }).then(async (sources) => {
